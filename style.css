@@ -1,0 +1,165 @@
+/* Coffee Theme - General Design */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5eee6;
+    color: #4b3025;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #4b3025;
+    color: #fff4e6;
+    padding: 20px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+/* Navigation */
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    color: #fff4e6;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #d9a066;
+}
+
+/* Buttons */
+button {
+    background-color: #b87945;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8b5e3c;
+}
+
+/* Home Page */
+.home {
+    padding: 40px 20px;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6f4e37;
+}
+
+/* Other Pages */
+.content {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content h2 {
+    color: #6f4e37;
+}
+
+/* Project Cards */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fffaf3;
+    color: #4b3025;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #d6c2ae;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card a {
+    color: #8b5e3c;
+}
+
+/* Footer */
+footer {
+    background-color: #4b3025;
+    color: #fff4e6;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Click Me Button Below Footer */
+.button-below {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #241914;
+    color: #f5eee6;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #17100d;
+}
+
+.dark-mode .content h2 {
+    color: #d9a066;
+}
+
+.dark-mode .card {
+    background-color: #3b2921;
+    color: #fff4e6;
+}
+
+.dark-mode .card a {
+    color: #e0b080;
+}
+
+.dark-mode .profile {
+    border-color: #d9a066;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    nav a {
+        margin: 6px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
